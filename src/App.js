@@ -4,9 +4,9 @@ import {reducer} from '../src/reducer/Reducer'
 import { useReducer } from 'react'
 import { initGameState } from './constants';
 import AppContext from '../src/contexts/Contexts'
-import Control from './components/Control/Control';
-import TakeBack from './components/Control/bits/TakeBack';
-import MovesList from './components/Control/bits/MovesList';
+// import Control from './components/Control/Control';
+// import TakeBack from './components/Control/bits/TakeBack';
+// import MovesList from './components/Control/bits/MovesList';
 
 function App() {
 
@@ -21,10 +21,10 @@ function App() {
         <AppContext.Provider value={providerState} >
             <div className="App">
                 <Board/>
-                <Control>
-                    <MovesList/>
-                    <TakeBack/>
-                </Control>
+                {/* <Control> */}
+                    {/* <MovesList/> */}
+                    {/* <TakeBack/> */}
+                {/* </Control> */}
             </div>
         </AppContext.Provider>
     ); 

@@ -9,17 +9,42 @@ html,body {
 .App {
   display: grid;
   place-content: center;
+  display: flex;
+  align-items: center;
   height: 100vh;
   background: var(--bg-color);
   font-family: 'Sofia Sans', sans-serif;
   grid-template-columns: auto 220px;
 
 }
-button {
+/* button {
   background: var(--dark-tile);
   color: var(--light-tile);
   border: 0 none;
   padding: 10px 30px;
   margin: 10px 0;
   font-size: 1.1em;
-} 
+}  */
+
+@media only screen and (max-width:280px){
+  .App{
+  display: grid;
+  place-content: center; 
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  background: var(--bg-color);
+  font-family: 'Sofia Sans', sans-serif;
+  grid-template-columns: auto 110px;
+  }
+  :root {
+    --tile-size: 39px;
+}
+  
+}
+
+@media screen and(max-width:450px) {
+  :root{
+    --tile-size:40px;
+  }
+}
